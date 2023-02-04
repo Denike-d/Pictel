@@ -6,6 +6,7 @@ import Search from "./Search.svg";
 import { useNavigate } from "react-router-dom";
 
 import { getSearchResults } from "../../axios";
+import { pexel } from "../../axios";
 import SearchResult from "../../pages/SearchResult/SearchResult";
 
 export default function Banner() {
@@ -20,7 +21,7 @@ export default function Banner() {
   }
 
   async function allSearchResults() {
-    await getSearchResults.get(`search?query=${userInput}`).then((response) => {
+    await pexel.get(`search?query=${userInput}`).then((response) => {
       navigate("/query", {
         state: { response: response.data.photos, userInput: userInput },
       });

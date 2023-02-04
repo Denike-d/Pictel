@@ -13,6 +13,23 @@
         }
         
     }
-        
-    
+}
+
+@media screen and (max-width: 600px) {
+    .tabs{
+        .tab-list{
+            gap: 1rem;
+            margin: 0;
+            display: block;
+        }
+    }
+    .stock-photos{
+        .photos{
+            display: grid;
+            grid-template-columns: repeat(1, minmax(0, 1fr));
+            grid-gap: 2rem;
+        }
+      
+    }
+  
 }

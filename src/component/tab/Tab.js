@@ -20,7 +20,7 @@ export default function Tab() {
             className={`tab-nav__item ${
               tab === "pending" ? "tab-nav__item--active" : ""
             } `}
-            onClick={() => setTab("pending")}
+            onClick={() => setTab("places")}
           >
             Places
           </li>
@@ -28,7 +28,7 @@ export default function Tab() {
             className={`tab-nav__item ${
               tab === "completed" ? "tab-nav__item--active" : ""
             } `}
-            onClick={() => setTab("completed")}
+            onClick={() => setTab("flowers")}
           >
             Flowers
           </li>
@@ -36,7 +36,7 @@ export default function Tab() {
             className={`tab-nav__item ${
               tab === "cancelled" ? "tab-nav__item--active" : ""
             } `}
-            onClick={() => setTab("cancelled")}
+            onClick={() => setTab("people")}
           >
             People
           </li>
